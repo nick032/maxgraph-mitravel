@@ -46,13 +46,6 @@
 
 .first__btn {
     background-color: var(--accent-color);
-    color: var(--white-color);
-    text-transform: uppercase;
-    font-weight: 800;
-    border-radius: 8px;
-    padding: 33px 80px;
-    font-size: 12px;
-    letter-spacing: 2.18182px;
     position: relative;
     z-index: 5;
 }

@@ -12,9 +12,29 @@
     display: flex;
 }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  display: none;
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.section-title {
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.section-title--center {
+    text-align: center;
+    max-width: 0;
+}
+
+
+.btn {
+    font-weight: 800;
+    padding: 33px 80px;
+    font-size: 12px;
+    letter-spacing: 2.18182;
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: var(--white-color);    
 }
