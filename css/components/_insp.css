@@ -1,5 +1,6 @@
 .insp {
     padding-top: 95px;
+    padding-bottom: 140px;
 }
 
 .section-title{}
@@ -76,6 +77,20 @@
     font-size: 32px;
     color: var(--white-color);
     margin-bottom: 25px;
+    line-height: 40px;
+}
+
+.insp__play {
+    background-image: url("/img/play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 5;
+    width: 64px;
+    height: 64px;
 }
 
 .insp__people {
