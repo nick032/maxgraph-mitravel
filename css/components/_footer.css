@@ -49,6 +49,12 @@
     color: #959ea6;
     display: inline-block;
     margin-bottom: 12px;
+    transition: color 0.3s;
+}
+
+.footer__link:hover {
+    color: #666e75;
+    transition: color 0.3s;
 }
 
 .subs-form {
@@ -77,6 +83,12 @@
     width: 100%;
     height: 64px;
     padding: 0;
+    transition: background-color 0.3s;
+}
+
+.subs-form__btn:hover {
+    background-color: var(--neptune-hover-color);
+    transition: background-color 0.3s;
 }
 
 .footer__bottom {
