@@ -97,6 +97,32 @@
     transform: translateY(-50%);
 }
 
+.first__slider-btn {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    bottom: 33px;
+    z-index: 5;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn-left {
+    background-image: url("/img/arrow-left.svg");
+    left: 50px;    
+}
+
+.btn-right {
+    background-image: url("/img/arrow-right.svg");
+    right: 50px;
+    left: auto;
+}
+
+.main-slider__media {
+    max-height: 275px;
+}
+
 .main-slider {
     overflow: hidden;
     border-top-left-radius: 8px;
