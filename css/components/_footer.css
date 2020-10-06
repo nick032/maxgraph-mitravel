@@ -13,8 +13,6 @@
     justify-content: space-between;
 }
 
-.footer__column {}
-
 .footer__title {
     position: relative;
     font-family: 'Helvetica', sans-serif;
@@ -35,12 +33,6 @@
     bottom: 0;
     background-color: #57a773;
     position: absolute;
-}
-
-.footer__list {}
-
-.footer__item {
-    
 }
 
 .footer__link {
@@ -97,10 +89,6 @@
     padding: 30px 0;
     font-size: 13px;
     color: #959ea6;
-}
-
-.footer__copy {
-    
 }
 
 .footer__links {
