@@ -2,7 +2,8 @@ const swiper1 = document.querySelector('.slider-container'),
       swiper2 = document.querySelector('.swiper-container'),
       burger = document.querySelector('.burger'),
       closeMenu = document.querySelector('.menu__close-btn'),
-      menu = document.querySelector('.menu');
+      menu = document.querySelector('.menu'),
+      playButtonsFirst = document.querySelectorAll('.main-slider__play');
 
 let swiperSlider1 = new Swiper(swiper1, {
     centeredSlides: true,
@@ -26,10 +27,32 @@ let swiperSlider2 = new Swiper(swiper2, {
     }
 });
 
+swiperSlider2.on('transitionEnd', function () {
+    let videos = document.querySelectorAll('.first__slider video');
+    videos.forEach((el) => {
+        el.pause();
+        el.currentTime = 0;
+    })
+    playButtonsFirst.forEach((el) => {
+        el.style.display = 'block';
+    })
+})
+
 burger.addEventListener('click', () => {
     menu.classList.add('menu--visible');
 });
 closeMenu.addEventListener('click', () => {
     menu.classList.remove('menu--visible');
 });
+
+playButtonsFirst.forEach( (el) => {
+    el.addEventListener('click', (e) => {
+        let video = e.currentTarget.closest('.main-slider__media').querySelector('video');
+        video.play();
+        e.currentTarget.style.display = 'none';
+        setTimeout(() => {
+            video.volume = 0.5;
+        }, 1000);
+    })
+} );
 
